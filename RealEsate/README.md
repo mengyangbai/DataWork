@@ -18,7 +18,12 @@
 - Real Estate info
 
 ## Target Area
-Mostly China Suburb
+Mostly China Suburb, Including but not limited to
+- Burwood
+- Campsie
+- Chatswood
+- Zetland
+- Hurstville
 
 ## Reference links
 - http://www.abs.gov.au/
