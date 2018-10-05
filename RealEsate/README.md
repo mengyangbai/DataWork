@@ -27,7 +27,8 @@ Mostly China Suburb, Including but not limited to
 
 ## Reference links
 - http://www.abs.gov.au/
-    - http://quickstats.censusdata.abs.gov.au/census_services/getproduct/census/2016/quickstat/SSC10718?opendocument-
+    - http://quickstats.censusdata.abs.gov.au/census_services/getproduct/census/2016/quickstat/POA2134?opendocument
+    - http://quickstats.censusdata.abs.gov.au/census_services/getproduct/census/2016/communityprofile/POA2134?opendocument
 - https://www.domain.com.au
 - https://www.realestate.com.au/neighbourhoods/burwood-2134-nsw?cid=
 - https://www.onthehouse.com.au/real-estate/nsw/burwood-2134
