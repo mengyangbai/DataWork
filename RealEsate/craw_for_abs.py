@@ -21,4 +21,5 @@ if __name__ == "__main__":
         if postcode == 2134:
             r = requests.get(simple_data_link.format(postcode))
             soup = BeautifulSoup(r.text,"xml")
-            print(soup.find("peopleContent"))
+            # https://www.crummy.com/software/BeautifulSoup/bs4/doc/
+            print(soup.find(id="mainContent"))
