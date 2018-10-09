@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 '''
     Craw script for abs.com
     Source file: import_data.csv
@@ -7,6 +8,7 @@
 import pandas as pd
 import requests
 from bs4 import BeautifulSoup
+
 source_data = "RealEsate/import_data.csv"
 simple_data_link = "http://quickstats.censusdata.abs.gov.au/census_services/getproduct/census/2016/quickstat/POA{}?opendocument"
 # profile_link = "http://quickstats.censusdata.abs.gov.au/census_services/getproduct/census/2016/communityprofile/POA{}?opendocument"
@@ -18,8 +20,9 @@ headers = { 'User-Agent' : user_agent}
 if __name__ == "__main__":
     import_area = pd.read_csv(source_data)
     for postcode in import_area['Postcode']:
-        if postcode == 2134:
+        if postcode == 2017:
             r = requests.get(simple_data_link.format(postcode))
-            soup = BeautifulSoup(r.text,"xml")
+            soup = BeautifulSoup(r.text,features="lxml")
             # https://www.crummy.com/software/BeautifulSoup/bs4/doc/
             print(soup.find(id="mainContent"))
+            # print(soup.find_all(id="countryOfBirthTable"))
