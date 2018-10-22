@@ -39,6 +39,9 @@ var countryOfMotherData = [];
 '''
 # Direct read the js data, is the fastest solution
 
+
+# Direct crawling
+
 if __name__ == "__main__":
     import_area = pd.read_csv(source_data)
     for postcode in import_area['Postcode']:
