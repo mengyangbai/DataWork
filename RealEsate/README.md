@@ -33,4 +33,6 @@ Mostly China Suburb, Including but not limited to
 - https://www.realestate.com.au/neighbourhoods/burwood-2134-nsw?cid=
 - https://www.onthehouse.com.au/real-estate/nsw/burwood-2134
 
-Basic plan, will finish the first crawling and let's see what going on.
+Basic plan, will finish the first crawling and let's see what going on --- FINISHED
+
+Create Class for status

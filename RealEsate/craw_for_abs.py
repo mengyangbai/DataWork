@@ -8,6 +8,8 @@
 import pandas as pd
 import requests
 from bs4 import BeautifulSoup
+import io
+import sys,os
 
 source_data = "RealEsate/import_data.csv"
 simple_data_link = "http://quickstats.censusdata.abs.gov.au/census_services/getproduct/census/2016/quickstat/POA{}?opendocument"
@@ -42,16 +44,14 @@ var countryOfMotherData = [];
 
 # Direct crawling
 
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer,encoding='utf-8')
+
 if __name__ == "__main__":
     import_area = pd.read_csv(source_data)
     for postcode in import_area['Postcode']:
         if postcode == 2134:
             r = requests.get(simple_data_link.format(postcode))
             soup = BeautifulSoup(r.text,features="lxml")
-            # https://www.crummy.com/software/BeautifulSoup/bs4/doc/
-            for sibling in soup.find(id="peopleContent").table.next_siblings:
-                # if sibling.string and "<!-- People -->" in sibling.string:
-                if sibling and sibling.table:
-                    print(sibling)
-                    print("---------")
-            # print(soup.find_all(id="countryOfBirthTable"))
+            table_info = soup.find_all('table')
+            # table_info[7], table_info[8]
+            
