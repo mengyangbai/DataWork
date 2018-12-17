@@ -36,3 +36,8 @@ Mostly China Suburb, Including but not limited to
 Basic plan, will finish the first crawling and let's see what going on --- FINISHED
 
 Create Class for status
+
+## Basic step
+
+- python 3.6
+- python3.6 craw_for_abs.py
